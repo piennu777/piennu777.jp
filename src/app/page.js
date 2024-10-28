@@ -414,7 +414,7 @@ export default function Home() {
               <div class="content-box team">
                 <div class="content-box-image">
                   <div class="subscribe">
-                    <h1>30k+</h1>
+                    <h1>300k+</h1>
                     <p>Total views</p>
                   </div>
                 </div>
