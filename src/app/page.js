@@ -9,7 +9,6 @@ import mainStyles from '@/assets/css/main.css';
 import headerStyles from '@/assets/css/header.css';
 import helloStyles from '@/assets/css/hello.css';
 import profileStyles from '@/assets/css/profile.css';
-import discordStyles from '@/assets/css/discord.css';
 
 import icon from "@/assets/images/icon.png";
 import myicon from "@/assets/images/myicon.jpg";
