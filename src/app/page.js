@@ -12,7 +12,7 @@ import profileStyles from '@/assets/css/profile.css';
 
 import icon from "@/assets/images/icon.png";
 import myicon from "@/assets/images/myicon.jpg";
-import zisty from "@/assets/images/zisty_icon.png";
+import zisty from "@/assets/images/zisty.png";
 
 export default function Home() {
   useEffect(() => {
