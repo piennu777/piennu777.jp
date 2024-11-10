@@ -52,6 +52,7 @@
     color: #e2e2e2;
     position: relative;
     padding-top: 10px;
+    text-align: left;
 }
 
 .blog .description {
