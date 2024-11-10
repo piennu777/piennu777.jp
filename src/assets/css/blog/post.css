@@ -6,6 +6,10 @@
     text-align: left;
 }
 
+.blog p {
+    text-align: left;
+}
+
 .blog .title p {
     font-size: 1em;
     color: #858585;
