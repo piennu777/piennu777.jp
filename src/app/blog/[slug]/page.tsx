@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: post.title,
-    description: post.excerpt || `Blog post: ${post.title}`,
+    description: post.excerpt ?? `Blog post: ${post.title}`, 
   }
 }
 
