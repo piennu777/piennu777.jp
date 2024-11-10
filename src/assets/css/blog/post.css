@@ -14,6 +14,8 @@
     font-size: 1em;
     color: #858585;
     text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .blog .title h1 {
