@@ -6,7 +6,6 @@ import { getPostBySlug, getAllPosts } from '../../../../lib/posts'
 import { formatDate } from '../../../../lib/dateFormat'
 
 import '@/assets/css/hello.css'
-import '@/assets/css/profile.css'
 import '@/assets/css/blog/post.css'
 import '@/assets/css/projects.css'
 
