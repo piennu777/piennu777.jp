@@ -1,0 +1,252 @@
+.blog {
+    margin: 90px auto;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #080808;
+}
+
+.blog h2 {
+    background: linear-gradient(to bottom, white, rgb(119, 119, 119));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 5px;
+    padding-top: 50px;
+}
+
+.blog p {
+    color: #a1a1a1;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 25px;
+    max-width: 1350px;
+    padding: 40px 20px;
+}
+
+.article {
+    flex: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 450px;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+.article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.article:hover img {
+    filter: grayscale(0%);
+}
+
+.article .content {
+    margin-top: 15px;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding-top: 0;
+    color: #dbdbdb;
+}
+
+.article p {
+    color: #a1a1a1;
+    line-height: 1.6;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.blog .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #d8d8d8;
+    background-color: transparent;
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog .button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.267),
+            transparent);
+    transition: all 0.4s;
+}
+
+.blog .button a:hover {
+    box-shadow: 0 0 50px rgba(228, 228, 228, 0.24);
+    text-shadow: 0 0 5px rgb(228, 228, 228);
+}
+
+.blog .button a:hover::before {
+    left: 100%;
+}
+
+.blog .button a:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgb(228, 228, 228);
+}
+
+@media (max-width: 1200px) {
+    .article img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .article h2 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        color: #dbdbdb;
+    }
+
+    .article p {
+        color: #a1a1a1;
+        line-height: 1.6;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .blog h2 {
+        font-size: 42px;
+    }
+
+    .blog p {
+        font-size: 14px;
+    }
+
+    .articles {
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    .article {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .article img {
+        width: 40%;
+        height: 180px;
+        flex-shrink: 0;
+    }
+
+    .article .content {
+        margin-top: 0;
+        flex: 1;
+    }
+
+    .article h2 {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .article p {
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .blog button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+    .blog h2 {
+        font-size: 40px;
+    }
+
+    .blog p {
+        font-size: 12px;
+    }
+
+    .article img {
+        width: 40%;
+        height: 150px;
+        flex-shrink: 0;
+    }
+
+    .article h2 {
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    .article p {
+        text-align: left;
+        font-size: 0.8em;
+    }
+
+    .blog button {
+        font-size: 11px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog h2 {
+        font-size: 36px;
+    }
+
+    .blog p {
+        font-size: 11px;
+    }
+
+    .article img {
+        width: 40%;
+        height: 150px;
+        flex-shrink: 0;
+    }
+
+    .article h2 {
+        text-align: left;
+        font-size: 1.0em;
+    }
+
+    .article p {
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+    .blog button {
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+}
