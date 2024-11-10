@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import { getAllPosts, getPostBySlug } from '../../../lib/posts';
+import { getAllPosts } from '../../../lib/posts';
 import { Post } from '../../../types/post';
 
 import '@/assets/css/hello.css';
@@ -10,23 +10,8 @@ import '@/assets/css/projects.css';
 
 import blogheader from "@/assets/images/wallpaperbetter.com_1920x1080 (4).jpg";
 
-export async function getStaticProps({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug);
-  return {
-      props: {
-          post
-      }
-  };
-}
-
-export async function getStaticPaths() {
-  const posts = getAllPosts();
-  return {
-      paths: posts.map((post) => ({
-          params: { slug: post.slug }
-      })),
-      fallback: false
-  };
+interface BlogProps {
+  posts: Post[];
 }
 
 export default async function Blog() {
