@@ -468,7 +468,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="blog/job-requests">
+                        <a href="blog/about-contact">
               <div className="article">
                 <Image
                   src={blogheader}
@@ -485,7 +485,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="blog/about-contact">
+            <a href="blog/job-requests">
               <div className="article">
                 <Image
                   src={blogheader}
