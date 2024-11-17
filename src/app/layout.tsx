@@ -136,8 +136,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <div className="nav-category">
                 <p>Redirect</p>
                 <ul>
-                  <li><a href="https://zisty.net/" target="_blank">Blog</a></li>
-                  <li><a href="https://www.piennu777.jp/blog" target="_blank">Team</a></li>
+                  <li><a href="https://zisty.net/" target="_blank">Team</a></li>
+                  <li><a href="https://www.piennu777.jp/blog" target="_blank">Blog</a></li>
                   <li><a href="https://docs.piennu777.jp/" target="_blank">Documents</a></li>
                   <li><a href="mailto:pien@piennu777.jp" target="_blank">Contact Us</a></li>
                 </ul>
