@@ -14,16 +14,8 @@ header {
     margin: 0 auto;
     padding: 0 1rem;
     border: 1px solid #202224;
-    background-image: radial-gradient(
-        at 88% 40%,
-        rgb(0, 0, 0) 0px,
-        transparent 85%
-      ),
-      radial-gradient(at 49% 30%, rgb(0, 0, 0) 0px, transparent 85%),
-      radial-gradient(at 14% 26%, rgb(0, 0, 0) 0px, transparent 85%),
-      radial-gradient(at 0% 64%, hsla(0, 0%, 100%, 0.048) 0px, transparent 85%),
-      radial-gradient(at 41% 94%, hsla(0, 0%, 100%, 0.048) 0px, transparent 85%),
-      radial-gradient(at 100% 99%, hsla(0, 0%, 100%, 0.048) 0px, transparent 85%);
+    background: rgba(0, 0, 0, 0.151);
+    backdrop-filter: blur(2px);
     padding: 5px 30px;
     border-radius: 50px;
 }
